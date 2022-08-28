@@ -20,6 +20,16 @@ public class user {
     private double balance;
     public Node dummy = new Node(1), curr = dummy;
 
+    user(int id, String password){
+        this.id = id;
+        this.password = password;
+        this.balance = 1000;
+        this.curr.prev = new Node(1000);
+        curr.prev.type = "Cr";
+        curr.prev.available = 1000;
+        curr = curr.prev;
+    }
+
     public Node getPassbook(int id){
         return dummy.prev;
     }
@@ -72,15 +82,5 @@ public class user {
         }
         curr = curr.prev;
     }
-
-
-    user(int id, String password){
-        this.id = id;
-        this.password = password;
-        this.balance = 1000;
-        this.curr.prev = new Node(1000);
-        curr.prev.type = "Cr";
-        curr.prev.available = 1000;
-        curr = curr.prev;
-    }
+    
 }

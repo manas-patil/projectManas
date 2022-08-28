@@ -27,7 +27,7 @@ public class bankMain {
             System.out.println("2. Transfer Money");
             System.out.println("3. Check Balance");
             System.out.println("4. Withdraw Money");
-            System.out.println("5. E - Passbook");
+            System.out.println("5. Passbook");
             
             System.out.println("7. Delete acc");
             System.out.println("8. Exit");

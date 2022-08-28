@@ -73,7 +73,7 @@ public class Bank {
         if(users.remove(id)==null){
 
         }
-        System.out.println("User id "+ id +" has been sucessfully deleted. Sad to see you go.");
+        System.out.println("User id "+ id +" has been sucessfully deleted");
     }
     public void checkBal(int id) {
         user check = users.get(id);
@@ -84,8 +84,9 @@ public class Bank {
         user check = users.get(id);
 
         Node head = check.getPassbook(id);
+        System.out.println("Credits/Withdrawls            Closing Balance");
         while(head!=null){
-            System.out.println(head.data+head.type+"              "+ head.available);
+            System.out.println(head.data+head.type+" ----------------- "+ head.available);
             head = head.prev;
         }
 
